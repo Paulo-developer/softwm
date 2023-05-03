@@ -1,38 +1,210 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lobster+Two&family=Signika+Negative&display=swap');
+
+
+Header button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+Header {
+  color: #f0f8ff;
+  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  background: none;
+}
+Header a {
+  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+Header .logo {
+  cursor: pointer;
+  font-family: 'Lobster Two', cursive;
+  font-size: 33px;
+}
+Header .info-header {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  border-radius: 100px;
+  padding: 10px;
+}
+Header .cadastro {
+  display: flex;
+  gap: 20px;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.308);
+}
+Section {
+  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  color: aliceblue;
+  margin: 80px;
+}
+Section h3 {
+  color: rgb(204, 67, 90);
+  font-weight: bolder;
+}
+Section h1 {
+  font-size: 45px;
+}
+Section p {
+  font-weight: 500;
+}
+Section button {
+  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  margin-top: 7vh;
+  padding: 10px;
+  height: 6.5vh;
+  color: aliceblue;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #800c78 46%, #ae00d1 100%);
+  box-shadow: 0px 24px 30px -3px #d400ff49;
+}
+Section button:hover {
+  cursor: pointer;
+}
+Section button p {
+  font-size: 18px;
+}
+Section .material-symbols-outlined {
+  padding: 2px;
+  border-radius : 100px;
+  background-color: #4158D0;
+  background-image: linear-gradient(100deg, #4158D0 0%, #C850C0 46%, #a400c5 100%);
+  transition: .3s;
+}
+Section button:hover .material-symbols-outlined {
+  cursor: pointer;
+  padding: 6px;
+  border-radius : 100px;
+  background-color: #4158D0;
+  background-image: linear-gradient(100deg, #4158D0 0%, #C850C0 46%, #a400c5 100%);
+}
+Section .section-r img {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition-duration: .8s;
+  border-radius: 24px 60px;
+  width: 40vw;
+}
+Section .section-r img:hover {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition-duration: .3s;
+  border-radius: 60px 24px;
+}
+Section .section-r aside {
+  width: max-content;
   text-align: center;
+  padding: 3vh;
+  background-color: #ffff00;
+  margin: 15px;
+  box-shadow: 0px 24px 30px -3px #ffff0056;
+  color: #0000008f;
+  font-weight: bold;
+  border-radius: 36px 60px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.a p {
+  box-shadow: 0px 3px 32px 15px rgba(0, 255, 255, 0.226);
+  font-weight: bold;
+  color: #0000008f;
+  border-radius: 24px 60px;
+  background-color: aqua;
+  padding: 3vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-cards {
+  width: 100%;
+  height: max-content;
+}
+.section-cards .presentation-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.section-cards .cards-block {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+.cards-block .cards span {
+  width: 18%;
+  background-color: #eeea00;
+  border-radius: 15px;
+  padding: 20px;
+}
+.section-cards .cards {
+  border-radius: 30px;
+  background-color: #4158D0;
+  background-image: linear-gradient(135deg, #550083   10%, #210057 80%, #26003a 100%);
+    box-shadow: -20px 20px 60px #09001354;
+  
+    padding-block: 80px;
+  width: 22vw;
+  height: 30vh;
+  text-align: center;
+  transition-duration: .5s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 700px) {
+  Section {
+    margin: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  Header .info-header, .cadastro {
+    display: none;
+  }
+  Section {
+    display: flex;
+    flex-direction: column;
+  }
+  Section img {
+    display: none;
+  }
+  Section .a {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .section-cards {
+    width: 100%;
+  }
+  .cards-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cards-block .cards {
+    width: 80%;
   }
 }
