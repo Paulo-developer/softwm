@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/softwm/static/css/main.b6e299b4.css",
-    "main.js": "/softwm/static/js/main.9f7c4390.js",
+    "main.css": "/softwm/static/css/main.d887e6f6.css",
+    "main.js": "/softwm/static/js/main.ba8cab8f.js",
     "static/js/787.e0eae4da.chunk.js": "/softwm/static/js/787.e0eae4da.chunk.js",
     "static/media/garota-purple.jpg": "/softwm/static/media/garota-purple.e10d158db7a2ffcc9245.jpg",
     "index.html": "/softwm/index.html",
     "static/media/truck.svg": "/softwm/static/media/truck.7e76229ffc67a44d077e748703b28886.svg",
-    "main.b6e299b4.css.map": "/softwm/static/css/main.b6e299b4.css.map",
-    "main.9f7c4390.js.map": "/softwm/static/js/main.9f7c4390.js.map",
+    "main.d887e6f6.css.map": "/softwm/static/css/main.d887e6f6.css.map",
+    "main.ba8cab8f.js.map": "/softwm/static/js/main.ba8cab8f.js.map",
     "787.e0eae4da.chunk.js.map": "/softwm/static/js/787.e0eae4da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6e299b4.css",
-    "static/js/main.9f7c4390.js"
+    "static/css/main.d887e6f6.css",
+    "static/js/main.ba8cab8f.js"
   ]
 }
