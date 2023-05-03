@@ -8,7 +8,7 @@ export default function Cards() {
             <div className='section-cards'>
                 <div className="presentation-cards">
                     <h4>Service</h4>
-                    <h2>Millions of People use: SoftVM</h2>
+                    <h2>Millions of People use: SoftWM</h2>
                 </div>
                 <div className="cards-block">
                     <div className='cards'>
