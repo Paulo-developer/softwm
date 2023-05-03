@@ -1,13 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lobster+Two&family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
 
+p {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 300;
+}
 
 Header button {
   border: none;
   background: none;
   cursor: pointer;
 }
+
 Header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
   color: #f0f8ff;
   font-family: 'Do Hyeon', sans-serif;
   font-family: 'Signika Negative', sans-serif;
@@ -17,6 +30,7 @@ Header {
   padding: 25px;
   background: none;
 }
+
 Header a {
   font-family: 'Do Hyeon', sans-serif;
   font-family: 'Signika Negative', sans-serif;
@@ -24,11 +38,13 @@ Header a {
   color: white;
   font-weight: bold;
 }
+
 Header .logo {
   cursor: pointer;
   font-family: 'Lobster Two', cursive;
   font-size: 33px;
 }
+
 Header .info-header {
   align-items: center;
   display: flex;
@@ -36,6 +52,7 @@ Header .info-header {
   border-radius: 100px;
   padding: 10px;
 }
+
 Header .cadastro {
   display: flex;
   gap: 20px;
@@ -43,6 +60,7 @@ Header .cadastro {
   padding: 10px;
   background-color: rgba(128, 128, 128, 0.308);
 }
+
 Section {
   font-family: 'Do Hyeon', sans-serif;
   font-family: 'Signika Negative', sans-serif;
@@ -52,25 +70,32 @@ Section {
   color: aliceblue;
   margin: 80px;
 }
+
 Section h3 {
   color: rgb(204, 67, 90);
   font-weight: bolder;
 }
+
 Section h1 {
   font-size: 45px;
 }
+
 Section p {
   font-weight: 500;
 }
+
 Section button {
   font-family: 'Do Hyeon', sans-serif;
   font-family: 'Signika Negative', sans-serif;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
   font-size: 10px;
   margin-top: 7vh;
   padding: 10px;
+  width: 15.6vw;
+
   height: 6.5vh;
   color: aliceblue;
   font-weight: bold;
@@ -80,26 +105,37 @@ Section button {
   background-image: linear-gradient(43deg, #800c78 46%, #ae00d1 100%);
   box-shadow: 0px 24px 30px -3px #d400ff49;
 }
+
 Section button:hover {
   cursor: pointer;
 }
+
 Section button p {
   font-size: 18px;
 }
+
 Section .material-symbols-outlined {
   padding: 2px;
-  border-radius : 100px;
+  border-radius: 100px;
   background-color: #4158D0;
   background-image: linear-gradient(100deg, #4158D0 0%, #C850C0 46%, #a400c5 100%);
   transition: .3s;
 }
+
 Section button:hover .material-symbols-outlined {
   cursor: pointer;
   padding: 6px;
-  border-radius : 100px;
+  border-radius: 100px;
   background-color: #4158D0;
   background-image: linear-gradient(100deg, #4158D0 0%, #C850C0 46%, #a400c5 100%);
 }
+
+Section .section-l {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 Section .section-r img {
   box-sizing: border-box;
   padding: 0;
@@ -108,6 +144,7 @@ Section .section-r img {
   border-radius: 24px 60px;
   width: 40vw;
 }
+
 Section .section-r img:hover {
   box-sizing: border-box;
   padding: 0;
@@ -115,6 +152,7 @@ Section .section-r img:hover {
   transition-duration: .3s;
   border-radius: 60px 24px;
 }
+
 Section .section-r aside {
   width: max-content;
   text-align: center;
@@ -126,30 +164,37 @@ Section .section-r aside {
   font-weight: bold;
   border-radius: 36px 60px;
 }
+
 .a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .a p {
+  font-weight: bolder;
   box-shadow: 0px 3px 32px 15px rgba(0, 255, 255, 0.226);
-  font-weight: bold;
-  color: #0000008f;
+  color: #000000b4;
   border-radius: 24px 60px;
   background-color: aqua;
   padding: 3vh;
 }
+
 .section-cards {
   width: 100%;
   height: max-content;
 }
+
 .section-cards .presentation-cards {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
   align-items: center;
   width: 100%;
   text-align: center;
 }
+
 .section-cards .cards-block {
   display: flex;
   justify-content: center;
@@ -158,52 +203,162 @@ Section .section-r aside {
   gap: 50px;
   width: 100%;
 }
+
 .cards-block .cards span {
-  width: 18%;
-  background-color: #eeea00;
+  width: max-content;
+  font-size: xx-large;
+  box-shadow: 20px 20px 100px #ca00f2;
   border-radius: 15px;
   padding: 20px;
 }
+
 .section-cards .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   border-radius: 30px;
   background-color: #4158D0;
-  background-image: linear-gradient(135deg, #550083   10%, #210057 80%, #26003a 100%);
-    box-shadow: -20px 20px 60px #09001354;
-  
-    padding-block: 80px;
+  background-image: linear-gradient(135deg, #550083 10%, #210057 80%, #26003a 100%);
+  box-shadow: -20px 20px 60px #09001354;
+
+
+
+  padding-block: 80px;
   width: 22vw;
-  height: 30vh;
+  height: max-content;
   text-align: center;
   transition-duration: .5s;
 }
 
+footer {
+  padding: 10px;
+  text-align: center;
+  height: max-content;
+  font-weight: 400;
+  font-family: 'Archivo', sans-serif;
+  color: aliceblue;
+  border-top: 1px solid #3700553d;
+  background: none;
+}
+
+footer a {
+  font-weight: bold;
+  color: aliceblue;
+}
+
 @media screen and (max-width: 700px) {
+
+  /* 
+Button insperation by @ke1221
+Menu icon transofmation insperation by @Ali-Tahmazi99
+*/
+  .logo .info-header .menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13%;
+    color: #090909;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+      -6px -6px 12px #ffffff;
+  }
+
+  .logo .info-header .menuButton:hover {
+    border: 1px solid white;
+  }
+
+  .logo .info-header .menuButton:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+      inset -4px -4px 12px #ffffff;
+  }
+
+  .logo .info-header input[type="checkbox"] {
+   --webkit-appearance: none; 
+    display: none;
+    visibility: hidden;
+  }
+
+  .logo .info-header .menuButton span {
+    width: 30px;
+    height: 4px;
+    background: #131313;
+    border-radius: 100px;
+    transition: 0.3s ease;
+  }
+
+  .logo .info-header input[type]:checked~span.top {
+    transform: translateY(290%)rotate(45deg);
+    width: 40px;
+  }
+
+  .logo .info-header input[type]:checked~span.bot {
+    transform: translateY(-270%) rotate(-45deg);
+    width: 40px;
+    box-shadow: 0 0 10px #495057;
+  }
+
+  .logo .info-header input[type]:checked~span.mid {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
   Section {
+    padding-bottom: 60px;
     margin: 20px;
   }
-  Header .info-header, .cadastro {
-    display: none;
+  Section h1 {
+    font-size: 39px;
+  }
+  Section p {
+    font-size: 17.5px;
+  }
+  Header .info-header,
+  .cadastro {
+    display: flex;
+    gap: 20px;
+    display: block;
+  }
+  Header .info-header  {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
   }
   Section {
     display: flex;
     flex-direction: column;
   }
+
   Section img {
     display: none;
   }
+
   Section .a {
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
   }
+  Section button {
+    width: max-content;
+  }
+
   .section-cards {
     width: 100%;
   }
+
   .cards-block {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   .cards-block .cards {
     width: 80%;
   }
